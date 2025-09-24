@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Go Company Brand Colors */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 9%;
+
+    /* Coffee Black Primary */
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+
+    /* Golden Yellow Accent */
+    --secondary: 51 100% 50%;
+    --secondary-foreground: 0 0% 9%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    /* Go Yellow */
+    --accent: 51 100% 50%;
+    --accent-foreground: 0 0% 9%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 91%;
+    --input: 0 0% 91%;
+    --ring: 51 100% 50%;
+
+    /* Go Company Design Tokens */
+    --coffee-black: 0 0% 9%;
+    --go-yellow: 51 100% 50%;
+    --warm-white: 0 0% 98%;
+    --light-cream: 45 25% 95%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--coffee-black)), hsl(0 0% 20%));
+    --gradient-yellow: linear-gradient(135deg, hsl(var(--go-yellow)), hsl(45 100% 55%));
+    --gradient-card: linear-gradient(180deg, hsl(var(--warm-white)), hsl(var(--light-cream)));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px hsl(var(--coffee-black) / 0.1);
+    --shadow-yellow: 0 4px 20px hsl(var(--go-yellow) / 0.3);
+    --shadow-deep: 0 8px 32px hsl(var(--coffee-black) / 0.15);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 9%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+
+    --secondary: 51 100% 50%;
+    --secondary-foreground: 0 0% 9%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 51 100% 50%;
+    --accent-foreground: 0 0% 9%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 51 100% 50%;
+    
+    /* Dark mode tokens */
+    --coffee-black: 0 0% 9%;
+    --go-yellow: 51 100% 50%;
+    --warm-white: 0 0% 15%;
+    --light-cream: 0 0% 12%;
+    
+    --gradient-hero: linear-gradient(135deg, hsl(var(--coffee-black)), hsl(0 0% 15%));
+    --gradient-yellow: linear-gradient(135deg, hsl(var(--go-yellow)), hsl(45 100% 45%));
+    --gradient-card: linear-gradient(180deg, hsl(var(--warm-white)), hsl(var(--light-cream)));
+    
+    --shadow-soft: 0 4px 20px hsl(0 0% 0% / 0.3);
+    --shadow-yellow: 0 4px 20px hsl(var(--go-yellow) / 0.2);
+    --shadow-deep: 0 8px 32px hsl(0 0% 0% / 0.4);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
