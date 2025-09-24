@@ -116,6 +116,15 @@ const Header = () => {
                   {item.name}
                 </button>
               ))}
+              {/* 👇 Agregamos el botón de Asociate en mobile también */}
+      <a
+        href="https://www.fidebillapp.com.ar/gocompany"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block w-full text-left px-4 py-2 text-gray-700 hover:text-yellow-500 hover:bg-gray-50 transition-colors duration-200"
+      >
+        Asociate
+      </a>
               <div className="border-t border-gray-200 pt-4 px-4 flex space-x-4">
                 <a
                   href="https://instagram.com/gocompanycafe"
