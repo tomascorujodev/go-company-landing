@@ -31,7 +31,7 @@ const Header = () => {
             {/* Space reserved for logo image */}
             <div className="w-8 h-8 rounded-full overflow-hidden flex items-center justify-center">
               <img
-                src="src/assets/logo.png"
+                src="public/logo.png"
                 alt="Logo"
                 className="w-full h-full object-cover"
               />
